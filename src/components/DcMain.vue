@@ -10,13 +10,17 @@
             </h3>
         </div>
     </section>
+
+    <section class="blue-separator">
+
+    </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
     section {
-        height: 100px;
+        height: 15vh;
         background-color: black;
     }
 
@@ -31,6 +35,11 @@
             color: $title-color;
             font-size: 1.25rem;
         }
+    }
+
+    section.blue-separator {
+        background-color: $dc-color;
+        height: 15vh;
     }
 
 </style>

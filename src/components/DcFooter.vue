@@ -175,7 +175,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
     section.footer-top {
-        // height: 350px;
         background-image: url('../assets/img/footer-bg.jpg');
         background-position: center;
         background-size: cover;
@@ -225,7 +224,7 @@ export default {
 
     section.footer-bottom {
         background-color: #303030;
-        height: 100px;
+        height: 15vh;
 
         div.container {
             height: 100%;
