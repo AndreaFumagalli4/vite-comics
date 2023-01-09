@@ -1,5 +1,97 @@
 <script>
+export default {
+    data () {
+        return {
+            dcComicsItems : [
+                {
+                    text: 'Characters',
+                },
+                {
+                    text: 'Comics',
+                },
+                {
+                    text: 'Movies',
+                },
+                {
+                    text: 'Tv',
+                },
+                {
+                    text: 'Games',
+                },
+                {
+                    text: 'Videos',
+                },
+                {
+                    text: 'News',
+                },
+            ],
 
+            shopItems : [
+                {
+                    text: 'Shop DC',
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                },
+            ],
+
+            dcItems : [
+                {
+                    text: 'Terms Of Use',
+                },
+                {
+                    text: 'Privacy policy (new)',
+                },
+                {
+                    text: 'Ad Choices',
+                },
+                {
+                    text: 'Advertising',
+                },
+                {
+                    text: 'Jobs',
+                },
+                {
+                    text: 'Subscriptions',
+                },
+                {
+                    text: 'Talent Workshops',
+                },
+                {
+                    text: 'CPSC Certificates',
+                },
+                {
+                    text: 'Ratings',
+                },
+                {
+                    text: 'Shop Help',
+                },
+                {
+                    text: 'Contact Us',
+                },
+            ],
+
+            siteItems : [
+                {
+                    text: 'DC',
+                },
+                {
+                    text: 'MAD Magazine',
+                },
+                {
+                    text: 'DC Kids',
+                },
+                {
+                    text: 'DC Universe',
+                },
+                {
+                    text: 'DC Power Visa',
+                },
+            ]
+
+        }
+    }
+}
 </script>
 
 <template>
@@ -11,26 +103,8 @@
                         DC Comics
                     </h4>
                     <ul>
-                        <li>
-                            Characters
-                        </li>
-                        <li>
-                            Comics
-                        </li>
-                        <li>
-                            Movies
-                        </li>
-                        <li>
-                            Tv
-                        </li>
-                        <li>
-                            Games
-                        </li>
-                        <li>
-                            Videos
-                        </li>
-                        <li>
-                            News
+                        <li v-for="dcComicsItem in dcComicsItems">
+                            {{ dcComicsItem.text }}
                         </li>
                     </ul>
 
@@ -38,11 +112,8 @@
                         Shop
                     </h4>
                     <ul>
-                        <li>
-                            Shop DC
-                        </li>
-                        <li>
-                            Shop DC Collectibles
+                        <li v-for="shopItem in shopItems">
+                            {{ shopItem.text }}
                         </li>
                     </ul>
                 </nav>
@@ -51,60 +122,18 @@
                         DC
                     </h4>
                     <ul>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Privacy policy (new)
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
-                        </li>
-                        <li>
-                            Terms of Use
+                        <li v-for="dcItem in dcItems">
+                            {{ dcItem.text }}
                         </li>
                     </ul>
                 </nav>
                 <nav class="sites">
                     <h4>
-                        sites
+                        Sites
                     </h4>
                     <ul>
-                        <li>
-                            DC
-                        </li>
-                        <li>
-                            DC
-                        </li>
-                        <li>
-                            DC
-                        </li>
-                        <li>
-                            DC
-                        </li>
-                        <li>
-                            DC
+                        <li v-for="siteItem in siteItems">
+                            {{ siteItem.text }}
                         </li>
                     </ul>
                 </nav>
