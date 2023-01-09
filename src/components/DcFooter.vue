@@ -114,7 +114,31 @@
     </section>
 
     <section class="footer-bottom">
-        
+        <div class="container">
+            <a href="#">Sign-up now</a>
+            <div class="follow">
+                <h4>
+                    Follow Us
+                </h4>
+                <ul>
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -128,13 +152,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         color: $main-color;
+    }
 
-        div.container {
-            width: $container-width;
-            margin: $container-margin;
-            display: flex;
-            justify-content: space-between;
-        }
+    div.container {
+        width: $container-width;
+        margin: $container-margin;
+        display: flex;
+        justify-content: space-between;
     }
 
     div.navs {
@@ -171,6 +195,36 @@
     }
 
     section.footer-bottom {
-        background-color: black;
+        background-color: #303030;
+        height: 100px;
+
+        div.container {
+            height: 100%;
+            align-items: center;
+
+            a {
+                padding: 1rem;
+                text-transform: uppercase;
+                border: 2px solid $dc-color;
+            }
+        }
+    }
+
+    div.follow {
+        display: flex;
+        align-items: center;
+
+        h4{
+            padding: 0 1rem 0 0;
+            color: $dc-color;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                padding-right: .75rem;
+            }
+        }
     }
 </style>
