@@ -46,8 +46,8 @@
 @use '../styles/partials/variables' as *;
     div.header-container{
         height: 100px;
-        width: 70%;
-        margin: 0 auto;
+        width: $container-width;
+        margin: $container-margin;
         display: flex;
         justify-content: space-between;
         align-items: center;
