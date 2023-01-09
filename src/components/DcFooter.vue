@@ -4,9 +4,9 @@
 
 <template>
     <div>
-        <h1>
-            Questo è l'header
-        </h1>
+        <h3>
+            Questo è il footer
+        </h3>
     </div>
 </template>
 
