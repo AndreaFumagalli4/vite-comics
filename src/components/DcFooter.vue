@@ -125,16 +125,16 @@
                         <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
                     </li>
                     <li>
-                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                        <img src="../assets/img/footer-twitter.png" alt="Twitter logo">
                     </li>
                     <li>
-                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                        <img src="../assets/img/footer-youtube.png" alt="Youtube logo">
                     </li>
                     <li>
-                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                        <img src="../assets/img/footer-pinterest.png" alt="Pinterest logo">
                     </li>
                     <li>
-                        <img src="../assets/img/footer-facebook.png" alt="Facebook logo">
+                        <img src="../assets/img/footer-periscope.png" alt="Periscope logo">
                     </li>
                 </ul>
             </div>

@@ -1,4 +1,42 @@
 <script>
+export default {
+    data () {
+        return {
+            navItems : [
+                {
+                    text: 'Characters',
+                },
+                {
+                    text: 'Comics',
+                },
+                {
+                    text: 'Movies',
+                },
+                {
+                    text: 'Tv',
+                },
+                {
+                    text: 'Games',
+                },
+                {
+                    text: 'Collectibles',
+                },
+                {
+                    text: 'Videos',
+                },
+                {
+                    text: 'Fans',
+                },
+                {
+                    text: 'News',
+                },
+                {
+                    text: 'Shop',
+                },
+            ]
+        }
+    }
+}
 
 </script>
 
@@ -7,36 +45,10 @@
         <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
         <nav>
             <ul>
-                <li>
-                    Characters
+                <li v-for="navItem in navItems">
+                    {{ navItem.text }}
                 </li>
-                <li>
-                    Comics
-                </li>
-                <li>
-                    Movies
-                </li>
-                <li>
-                    Tv
-                </li>
-                <li>
-                    Games
-                </li>
-                <li>
-                    Collectibles
-                </li>
-                <li>
-                    Videos
-                </li>
-                <li>
-                    Fans
-                </li>
-                <li>
-                    News
-                </li>
-                <li>
-                    Shop
-                </li>
+                
             </ul>
         </nav>
     </div>
