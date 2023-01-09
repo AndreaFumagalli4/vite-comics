@@ -58,7 +58,6 @@
     }
 
     nav ul {
-        list-style-type: none;
         display: flex;
 
         li {

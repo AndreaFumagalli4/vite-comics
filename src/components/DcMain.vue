@@ -28,7 +28,7 @@
         align-items: center;
 
         h3{
-            color: white;
+            color: $title-color;
             font-size: 1.25rem;
         }
     }
