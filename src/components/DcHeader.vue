@@ -5,33 +5,43 @@ export default {
             navItems : [
                 {
                     text: 'Characters',
+                    active: false,
                 },
                 {
                     text: 'Comics',
+                    active: true,
                 },
                 {
                     text: 'Movies',
+                    active: false,
                 },
                 {
                     text: 'Tv',
+                    active: false,
                 },
                 {
                     text: 'Games',
+                    active: false,
                 },
                 {
                     text: 'Collectibles',
+                    active: false,
                 },
                 {
                     text: 'Videos',
+                    active: false,
                 },
                 {
                     text: 'Fans',
+                    active: false,
                 },
                 {
                     text: 'News',
+                    active: false,
                 },
                 {
                     text: 'Shop',
+                    active: false,
                 },
             ]
         }
@@ -45,7 +55,8 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
         <nav>
             <ul>
-                <li v-for="navItem in navItems">
+                <li v-for="navItem in navItems"
+                :class="(navItem.active) ? 'active' : '' ">
                     {{ navItem.text }}
                 </li>
                 
@@ -77,8 +88,13 @@ export default {
             font-weight: bold;
             text-transform: uppercase;
             font-size: $header-font-size;
-            padding: .5rem .9rem;
+            padding: 2.65rem .9rem;
         }
+    }
+
+    .active {
+        color: $dc-color;
+        border-bottom: 2px solid $dc-color;
     }
 
 </style>
