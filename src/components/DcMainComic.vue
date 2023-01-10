@@ -28,8 +28,8 @@ export default {
 @use '../styles/partials/variables' as *;
 
     div.card {
-        width: calc((100% / 6) - 1rem);
-        margin: 0 .5rem 1rem;
+        width: calc((100% / 6) - 1.5rem);
+        margin: 0 .75rem 1rem;
 
         h4,
         p {

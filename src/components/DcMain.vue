@@ -130,6 +130,11 @@ export default {
                 :title="comicItem.series"
                 :cost="comicItem.price" />
             </div>
+            <div class="button">
+                <button>
+                    Load More
+                </button>
+            </div>
         </div>
     </section>
 
@@ -173,13 +178,27 @@ export default {
                 text-transform: uppercase;
             }
         }
-
     }
 
     div.comics {
         display: flex;
         flex-wrap: wrap;
         padding-top: 3rem;
+    }
+
+    div.button {
+        text-align: center;
+        padding: 1.5rem 0 1rem;
+
+        button {
+            border: none;
+            background-color: $dc-color;
+            color: $title-color;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .6rem;
+            padding: .5rem 2.5rem;
+        }
     }
 
     section.blue-separator {
