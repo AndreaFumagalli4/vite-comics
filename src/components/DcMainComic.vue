@@ -18,9 +18,9 @@ export default {
         <h4>
             {{ title }}
         </h4>
-        <!-- <p>
+        <p>
             {{ cost }}
-        </p> -->
+        </p>
     </div>
 </template>
 
@@ -41,9 +41,15 @@ export default {
         }
     }
 
-    // div.card p {
-    //     color: $dc-color;
-    // }
+    div.card p {
+        padding-top: .5rem;
+        color: $dc-color;
+        display: none;
+    }
+
+    div.card:hover p {
+        display: block;
+    }
 
     div.cover-card {
         width: 100%;
