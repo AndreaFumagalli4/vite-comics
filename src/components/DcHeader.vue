@@ -68,7 +68,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
     div.header-container{
-        height: 15vh;
+        height: 100px;
         width: $container-width;
         margin: $container-margin;
         display: flex;

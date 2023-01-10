@@ -224,7 +224,7 @@ export default {
 
     section.footer-bottom {
         background-color: #303030;
-        height: 15vh;
+        height: 100px;
 
         div.container {
             height: 100%;

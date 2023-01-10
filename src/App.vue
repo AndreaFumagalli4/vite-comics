@@ -1,11 +1,13 @@
 <script>
 import DcHeader from './components/DcHeader.vue';
+import DcJumbo from './components/DcJumbo.vue';
 import DcMain from './components/DcMain.vue';
 import DcFooter from './components/DcFooter.vue';
 
 export default {
     components: {
         DcHeader,
+        DcJumbo,
         DcMain,
         DcFooter
     }
@@ -14,15 +16,19 @@ export default {
 
 <template>
     <header>
-        <DcHeader/>
+        <DcHeader />
     </header>
 
+    <section>
+        <DcJumbo />
+    </section>
+
     <main>
-        <DcMain/>
+        <DcMain />
     </main>
 
     <footer>
-        <DcFooter/>
+        <DcFooter />
     </footer>
 </template>
 

@@ -23,7 +23,9 @@ export default {
                     text: 'DC Power Visa',
                     imageName: 'buy-dc-power-visa.svg',
                 },
-            ]
+            ],
+
+            
         }
     },
 
@@ -70,7 +72,6 @@ export default {
     }
 
     div.main-container {
-        height: 100%;
         width: $container-width;
         margin: $container-margin;
         display: flex;
