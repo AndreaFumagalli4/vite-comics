@@ -14,7 +14,7 @@ export default {
 <style lang="scss" scoped>
 
 section.jumbo {
-    height: 350px;
+    height: 300px;
     background-image: url('../assets/img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: cover;
