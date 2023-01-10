@@ -52,49 +52,59 @@ export default {
 
 <template>
     <div class="header-container">
-        <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
         <nav>
+            <div class="main-logo">
+                <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
+            </div>
             <ul>
-                <li v-for="navItem in navItems"
-                :class="(navItem.active) ? 'active' : '' ">
+                <li v-for="navItem in navItems" :class="(navItem.active) ? 'active' : '' ">
                     {{ navItem.text }}
                 </li>
                 
             </ul>
         </nav>
+        
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
     div.header-container{
-        height: 100px;
         width: $container-width;
         margin: $container-margin;
+    }
+
+    nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        height: 100px;
+
+        ul {
+            display: flex;
+            line-height: calc(100px - .325rem);
+
+            li {
+                color: $main-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: $header-font-size;
+                margin: 0 .75rem;
+            }
+        }
+    }
+
+    div.main-logo {
+        padding: 1rem 0;
 
         img {
-            width: 60px;
+            height: 100%;
         }
     }
-
-    nav ul {
-        display: flex;
-
-        li {
-            color: $main-color;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: $header-font-size;
-            padding: 2.65rem .9rem;
-        }
-    }
+    
 
     .active {
         color: $dc-color;
-        border-bottom: 2px solid $dc-color;
+        border-bottom: 3px solid $dc-color;
     }
 
 </style>
