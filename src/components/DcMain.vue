@@ -110,7 +110,7 @@ export default {
 
     methods: {
         getImagePath: function(imgPath) {
-            return new URL(imgPath, import.meta.url).href;
+            return new URL(`../assets/img/${imgPath}`, import.meta.url).href;
         }
     }
 }
@@ -121,7 +121,7 @@ export default {
         <div class="main-container">
             <div class="title">
                 <h3>
-                    Corrent series
+                    Current series
                 </h3>
             </div>
             <div class="comics">
@@ -139,17 +139,13 @@ export default {
     </section>
 
     <section class="blue-separator">
-        <div class="container">
-            <ul>
-                <li v-for="listItem in listItems">
-                    <div>
-                        <img :src="getImagePath(`../assets/img/${listItem.imageName}`)" alt="`${listItem.imageName}`">
-                    </div>
-                    <p>
-                        {{ listItem.text }}
-                    </p>
-                </li>
-            </ul>
+        <div class="banner">
+            <div class="banner-element" v-for="listItem in listItems">
+                <img :src="getImagePath(listItem.imageName)" alt="`${listItem.text}`">
+                <p>
+                    {{ listItem.text }}
+                </p>
+            </div>
         </div>
     </section>
 </template>
@@ -203,46 +199,30 @@ export default {
 
     section.blue-separator {
         background-color: $dc-color;
-        height: 15vh;
+        height: 100px;
     }
 
-    div.container{
+    div.banner{
+        height: 100%;
         width: $container-width;
         margin: $container-margin;
-        height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
 
-        ul {
+        div.banner-element {
             display: flex;
-            justify-content: space-between;
             align-items: center;
 
-            li {
-                padding: 0 1rem;
-                font-size: .7rem;
-                font-weight: 300;
+            img {
+                height: 40px;
+                margin-right: 1rem;
+            }
+
+            p {
+                font-size: .75rem;
                 text-transform: uppercase;
                 color: $title-color;
-                display: flex;
-                align-items: center;
             }
-        }
-    }
-
-    li div {
-        width: 55px;
-        height: 55px;
-        margin-right: .5rem;
-
-        img {
-            height: 80%;
-            width: 80%;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
     }
 
