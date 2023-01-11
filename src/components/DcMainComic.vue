@@ -16,11 +16,9 @@ export default {
             <img :src="cover" alt="">
         </div>
         <h4>
-            {{ title }}
+            {{ title }} -- 
         </h4>
-        <p>
-            {{ cost }}
-        </p>
+        <span>{{ cost }}</span> 
     </div>
 </template>
 
@@ -32,23 +30,17 @@ export default {
         margin: 0 .75rem 1rem;
 
         h4,
-        p {
+        span {
             color: $title-color;
             text-transform: uppercase;
             font-size: .65rem;
             font-weight: 300;
             padding-top: 1rem;
         }
-    }
 
-    div.card p {
-        padding-top: .5rem;
-        color: $dc-color;
-        display: none;
-    }
-
-    div.card:hover p {
-        display: block;
+        span {
+            color: $dc-color;
+        }
     }
 
     div.cover-card {
@@ -58,6 +50,8 @@ export default {
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            object-position: top;
         }
     }
 </style>
